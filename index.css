@@ -1,0 +1,121 @@
+body {
+  font-family: "Lobster", sans-serif;
+  background-color: #ffeb3b; /* Bright yellow background */
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 2px solid #ff5722; /* Bright orange border */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.popup.visible {
+  display: block;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.avatar {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+}
+
+.avatar-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 4px solid #000;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffcc00; /* Light yellow background for speech bubble */
+  border: 2px solid #ff5722; /* Bright orange border */
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  animation: pop-in 0.3s ease forwards;
+  opacity: 0;
+  display: none;
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.start-section {
+  background-image: url('./BG-Still.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#Intro-Quiz {
+  color: #e91e63; /* Bright pink color */
+  text-shadow: 2px 2px 2px #f48fb1; /* Light pink shadow */
+}
+
+#Intro-Para {
+  color: #f06292; /* Light pink color */
+  text-shadow: 2px 2px 2px #e91e63; /* Bright pink shadow */
+}
+
+.navbar {
+  background-color: #ffeb3b; /* Bright yellow for the navbar */
+}
+
+#logo {
+  color: #ff5722; /* Bright orange text */
+  font-size: 40px;
+  text-shadow: 2px 2px 5px #f48fb1; /* Light pink shadow */
+}
+
+#start-btn {
+  color: #fff; /* White text */
+  background-color: #ff5722; /* Bright orange background */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+}
+
+#speech-text {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  color: #4caf50; /* Green color for text */
+}
