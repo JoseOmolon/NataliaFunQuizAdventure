@@ -208,12 +208,12 @@ startBtn.addEventListener('click', function () {
       message = 'Congratulations! You passed the quiz!';
       finalScore.style.color = 'green'; // Set text color for passing
       // Show avatar
-      document.getElementById('avatar').src = 'path_to_congratulations_avatar.png'; // Set the correct path for the avatar
+      document.getElementById('avatar').src = 'https://github.com/BobchopGaming/NataliaFunQuizAdventure/blob/main/Natalia_Avatar.webp'; // Set the correct path for the avatar
     } else {
       message = 'Try again! You can do better!';
       finalScore.style.color = 'red'; // Set text color for failing
       // Show avatar
-      document.getElementById('avatar').src = 'path_to_try_again_avatar.png'; // Set the correct path for the avatar
+      document.getElementById('avatar').src = 'https://github.com/BobchopGaming/NataliaFunQuizAdventure/blob/main/Natalia_Avatar.webp'; // Set the correct path for the avatar
     }
   
     // Update the message element
