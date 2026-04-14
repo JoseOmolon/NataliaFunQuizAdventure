@@ -1,4 +1,4 @@
-# Contributor Covenant Code of Conduct 12345
+# Contributor Covenant Code of Conduct 1234
 
 ## Our Pledge
 
